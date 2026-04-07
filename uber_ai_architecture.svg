@@ -1,0 +1,122 @@
+<svg width="680" viewBox="0 0 680 860" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="680" height="860" fill="#0f0f0f"/>
+
+  <!-- Layer labels -->
+  <text x="30" y="115" text-anchor="middle" transform="rotate(-90,30,115)" font-size="10" fill="#555" font-family="sans-serif">FRONTEND</text>
+  <text x="30" y="295" text-anchor="middle" transform="rotate(-90,30,295)" font-size="10" fill="#555" font-family="sans-serif">LOGIC</text>
+  <text x="30" y="510" text-anchor="middle" transform="rotate(-90,30,510)" font-size="10" fill="#555" font-family="sans-serif">DATA</text>
+  <text x="30" y="700" text-anchor="middle" transform="rotate(-90,30,700)" font-size="10" fill="#555" font-family="sans-serif">OUTPUT</text>
+
+  <!-- LAYER 1: Streamlit UI -->
+  <rect x="50" y="30" width="600" height="148" rx="14" fill="#2a1a3e" stroke="#7f77dd" stroke-width="0.5"/>
+  <text x="68" y="52" font-size="11" fill="#7f77dd" font-family="sans-serif" opacity="0.7">Streamlit UI layer</text>
+
+  <rect x="68" y="62" width="130" height="52" rx="8" fill="#3c3489" stroke="#7f77dd" stroke-width="0.5"/>
+  <text x="133" y="84" text-anchor="middle" font-size="13" font-weight="bold" fill="#cec bf6" font-family="sans-serif">Vehicle selector</text>
+  <text x="133" y="101" text-anchor="middle" font-size="11" fill="#afa9ec" font-family="sans-serif">Bike / Car button</text>
+
+  <rect x="220" y="62" width="130" height="52" rx="8" fill="#3c3489" stroke="#7f77dd" stroke-width="0.5"/>
+  <text x="285" y="84" text-anchor="middle" font-size="13" font-weight="bold" fill="#cecbf6" font-family="sans-serif">Location picker</text>
+  <text x="285" y="101" text-anchor="middle" font-size="11" fill="#afa9ec" font-family="sans-serif">Pickup &amp; drop select</text>
+
+  <rect x="372" y="62" width="130" height="52" rx="8" fill="#993c1d" stroke="#d85a30" stroke-width="0.5"/>
+  <text x="437" y="84" text-anchor="middle" font-size="13" font-weight="bold" fill="#f5c4b3" font-family="sans-serif">Book ride button</text>
+  <text x="437" y="101" text-anchor="middle" font-size="11" fill="#f0997b" font-family="sans-serif">Triggers ride flow</text>
+
+  <rect x="524" y="62" width="110" height="52" rx="8" fill="#444441" stroke="#888780" stroke-width="0.5"/>
+  <text x="579" y="84" text-anchor="middle" font-size="13" font-weight="bold" fill="#d3d1c7" font-family="sans-serif">Sidebar</text>
+  <text x="579" y="101" text-anchor="middle" font-size="11" fill="#b4b2a9" font-family="sans-serif">Status &amp; fare info</text>
+
+  <rect x="68" y="128" width="480" height="34" rx="6" fill="#3c3489" stroke="#7f77dd" stroke-width="0.5" opacity="0.6"/>
+  <text x="308" y="150" text-anchor="middle" font-size="11" fill="#afa9ec" font-family="sans-serif">st.session_state — persists vehicle choice, booking flag, driver info across reruns</text>
+
+  <!-- LAYER 2: Python Logic -->
+  <rect x="50" y="196" width="600" height="188" rx="14" fill="#04342c" stroke="#1d9e75" stroke-width="0.5"/>
+  <text x="68" y="218" font-size="11" fill="#1d9e75" font-family="sans-serif" opacity="0.7">Python business logic layer</text>
+
+  <rect x="68" y="228" width="150" height="56" rx="8" fill="#085041" stroke="#1d9e75" stroke-width="0.5"/>
+  <text x="143" y="250" text-anchor="middle" font-size="13" font-weight="bold" fill="#9fe1cb" font-family="sans-serif">haversine()</text>
+  <text x="143" y="268" text-anchor="middle" font-size="11" fill="#5dcaa5" font-family="sans-serif">Great-circle distance</text>
+
+  <rect x="240" y="228" width="150" height="56" rx="8" fill="#085041" stroke="#1d9e75" stroke-width="0.5"/>
+  <text x="315" y="250" text-anchor="middle" font-size="13" font-weight="bold" fill="#9fe1cb" font-family="sans-serif">Fare calculator</text>
+  <text x="315" y="268" text-anchor="middle" font-size="11" fill="#5dcaa5" font-family="sans-serif">Rate × dist + random</text>
+
+  <rect x="412" y="228" width="150" height="56" rx="8" fill="#085041" stroke="#1d9e75" stroke-width="0.5"/>
+  <text x="487" y="250" text-anchor="middle" font-size="13" font-weight="bold" fill="#9fe1cb" font-family="sans-serif">Driver generator</text>
+  <text x="487" y="268" text-anchor="middle" font-size="11" fill="#5dcaa5" font-family="sans-serif">Name, phone, plate</text>
+
+  <rect x="68" y="306" width="220" height="52" rx="8" fill="#444441" stroke="#888780" stroke-width="0.5"/>
+  <text x="178" y="327" text-anchor="middle" font-size="13" font-weight="bold" fill="#d3d1c7" font-family="sans-serif">@st.cache_data</text>
+  <text x="178" y="345" text-anchor="middle" font-size="11" fill="#b4b2a9" font-family="sans-serif">Heat pts + vehicle markers</text>
+
+  <rect x="310" y="306" width="252" height="52" rx="8" fill="#633806" stroke="#ef9f27" stroke-width="0.5"/>
+  <text x="436" y="327" text-anchor="middle" font-size="13" font-weight="bold" fill="#fac775" font-family="sans-serif">Live map HTML builder</text>
+  <text x="436" y="345" text-anchor="middle" font-size="11" fill="#ef9f27" font-family="sans-serif">f-string injects Python vars → JS</text>
+
+  <!-- LAYER 3: Data & Maps -->
+  <rect x="50" y="402" width="600" height="210" rx="14" fill="#042c53" stroke="#378add" stroke-width="0.5"/>
+  <text x="68" y="424" font-size="11" fill="#378add" font-family="sans-serif" opacity="0.7">Data &amp; mapping layer</text>
+
+  <rect x="68" y="434" width="160" height="56" rx="8" fill="#0c447c" stroke="#378add" stroke-width="0.5"/>
+  <text x="148" y="455" text-anchor="middle" font-size="13" font-weight="bold" fill="#b5d4f4" font-family="sans-serif">locations{}</text>
+  <text x="148" y="473" text-anchor="middle" font-size="11" fill="#85b7eb" font-family="sans-serif">16 Bangalore lat/lons</text>
+
+  <rect x="252" y="434" width="160" height="56" rx="8" fill="#0c447c" stroke="#378add" stroke-width="0.5"/>
+  <text x="332" y="455" text-anchor="middle" font-size="13" font-weight="bold" fill="#b5d4f4" font-family="sans-serif">SQLite (uber.db)</text>
+  <text x="332" y="473" text-anchor="middle" font-size="11" fill="#85b7eb" font-family="sans-serif">Persists bookings</text>
+
+  <rect x="436" y="434" width="190" height="56" rx="8" fill="#0c447c" stroke="#378add" stroke-width="0.5"/>
+  <text x="531" y="455" text-anchor="middle" font-size="13" font-weight="bold" fill="#b5d4f4" font-family="sans-serif">Folium static map</text>
+  <text x="531" y="473" text-anchor="middle" font-size="11" fill="#85b7eb" font-family="sans-serif">Markers + HeatMap + route</text>
+
+  <rect x="68" y="510" width="220" height="56" rx="8" fill="#633806" stroke="#ef9f27" stroke-width="0.5"/>
+  <text x="178" y="531" text-anchor="middle" font-size="13" font-weight="bold" fill="#fac775" font-family="sans-serif">Leaflet.js live map</text>
+  <text x="178" y="549" text-anchor="middle" font-size="11" fill="#ef9f27" font-family="sans-serif">CartoDB dark tile layer</text>
+
+  <rect x="310" y="510" width="220" height="56" rx="8" fill="#633806" stroke="#ef9f27" stroke-width="0.5"/>
+  <text x="420" y="531" text-anchor="middle" font-size="13" font-weight="bold" fill="#fac775" font-family="sans-serif">AI movement engine</text>
+  <text x="420" y="549" text-anchor="middle" font-size="11" fill="#ef9f27" font-family="sans-serif">setTimeout loop, haversineJS</text>
+
+  <!-- LAYER 4: Output -->
+  <rect x="50" y="630" width="600" height="200" rx="14" fill="#4a1b0c" stroke="#d85a30" stroke-width="0.5"/>
+  <text x="68" y="652" font-size="11" fill="#d85a30" font-family="sans-serif" opacity="0.7">Rendered output layer</text>
+
+  <rect x="68" y="662" width="160" height="56" rx="8" fill="#993c1d" stroke="#d85a30" stroke-width="0.5"/>
+  <text x="148" y="683" text-anchor="middle" font-size="13" font-weight="bold" fill="#f5c4b3" font-family="sans-serif">Static heatmap</text>
+  <text x="148" y="701" text-anchor="middle" font-size="11" fill="#f0997b" font-family="sans-serif">st_folium component</text>
+
+  <rect x="252" y="662" width="160" height="56" rx="8" fill="#993c1d" stroke="#d85a30" stroke-width="0.5"/>
+  <text x="332" y="683" text-anchor="middle" font-size="13" font-weight="bold" fill="#f5c4b3" font-family="sans-serif">Live tracking map</text>
+  <text x="332" y="701" text-anchor="middle" font-size="11" fill="#f0997b" font-family="sans-serif">components.html iframe</text>
+
+  <rect x="436" y="662" width="190" height="56" rx="8" fill="#993c1d" stroke="#d85a30" stroke-width="0.5"/>
+  <text x="531" y="683" text-anchor="middle" font-size="13" font-weight="bold" fill="#f5c4b3" font-family="sans-serif">AI status panel</text>
+  <text x="531" y="701" text-anchor="middle" font-size="11" fill="#f0997b" font-family="sans-serif">ETA, distance, driver log</text>
+
+  <rect x="68" y="742" width="558" height="44" rx="8" fill="#791f1f" stroke="#e24b4a" stroke-width="0.5"/>
+  <text x="347" y="762" text-anchor="middle" font-size="13" font-weight="bold" fill="#f7c1c1" font-family="sans-serif">Proximity alert</text>
+  <text x="347" y="778" text-anchor="middle" font-size="11" fill="#f09595" font-family="sans-serif">JS fires when rider &lt; 350m — DOM alert overlay for 4s</text>
+
+  <!-- ARROWS -->
+  <line x1="133" y1="114" x2="133" y2="228" stroke="#555" stroke-width="0.8" marker-end="url(#arrow)"/>
+  <line x1="285" y1="114" x2="315" y2="228" stroke="#555" stroke-width="0.8" marker-end="url(#arrow)"/>
+  <line x1="437" y1="114" x2="487" y2="228" stroke="#555" stroke-width="0.8" marker-end="url(#arrow)"/>
+  <path d="M548 128 L548 178 L579 178 L579 62" fill="none" stroke="#555" stroke-width="0.8" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+  <line x1="143" y1="284" x2="143" y2="434" stroke="#555" stroke-width="0.8" marker-end="url(#arrow)"/>
+  <line x1="315" y1="284" x2="332" y2="434" stroke="#555" stroke-width="0.8" marker-end="url(#arrow)"/>
+  <line x1="436" y1="340" x2="436" y2="434" stroke="#555" stroke-width="0.8" marker-end="url(#arrow)"/>
+  <line x1="390" y1="358" x2="300" y2="510" stroke="#555" stroke-width="0.8" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+  <line x1="148" y1="490" x2="148" y2="662" stroke="#555" stroke-width="0.8" marker-end="url(#arrow)"/>
+  <line x1="332" y1="490" x2="332" y2="662" stroke="#555" stroke-width="0.8" marker-end="url(#arrow)"/>
+  <line x1="531" y1="490" x2="531" y2="662" stroke="#555" stroke-width="0.8" marker-end="url(#arrow)"/>
+  <line x1="420" y1="566" x2="380" y2="662" stroke="#555" stroke-width="0.8" marker-end="url(#arrow)"/>
+  <line x1="420" y1="566" x2="420" y2="742" stroke="#555" stroke-width="0.8" stroke-dasharray="4 3" marker-end="url(#arrow)"/>
+</svg>
